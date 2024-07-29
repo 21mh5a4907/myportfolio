@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Yadavilli Portfolio</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #1e3d58;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .header a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .profile {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+        }
+        
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .about, .projects, .contact, .certifications, .skills,.Mysocialprofiles {
+            background: #fff;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project-item, .skills .skill-item ,.Education{
+            margin: 1% 0;
+            padding: 1rem;
+            box-sizing: border-box;
+            background: #e4e4e4;
+            border-radius: 5px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            background: #1e3d58;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact form button:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        .resume {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .resume a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #1e3d58;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .resume a:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Vinay Yadavilli</h1>
+            <p>
+                <a href="#web-developer">Web Developer</a> | 
+                <a href="#programmer">Programmer</a> | 
+                <a href="#cloud-enthusiast">Cloud Enthusiast</a>
+            </p>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <img src="https://unexpected-snowflake-f8b.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ffd8cedfd-bb51-41e6-a8f2-900542d517de%2F77c2e29f-2f3a-41f0-b832-1dbec4b15eb1%2Fvinay.jpg.png?table=block&id=c6ad1f7c-be01-4f89-bd8c-fd74c6650477&spaceId=fd8cedfd-bb51-41e6-a8f2-900542d517de&width=1020&userId=&cache=v2" alt="Vinay Yadavilli">
+            <h2>About Me</h2>
+            <p>Passionate about building web applications and exploring new technologies. Experienced in cloud computing and web development.</p>
+        </div>
+    </section>
+    <section class="Education">
+        <div class="container">
+            <h2>Education</h2>
+            <h3>Bachelor Of Technology</h3>
+            <p>i have completed my bachelors degree in the stream of <q><b>Internet Of Things</b></q>which is a sub branch of <q><b>Compuer Science Engineering</b></q> in Aditya College Of Engineering with aggregate of 7.34 CGPA</p>
+            <h3>Diploma in Mechanical Engineering</h3>
+            <p> i have completed my diploma in the stream of <q><b>Mechanical Engineering </b></q> in KAKINADA INSTITUTE OF TECHNOLOGY AND SCIENCE in divili
+            with the aggregate of 71.3%</p>
+        </div>
+    </section>
+
+    <section id="web-developer" class="projects">
+        <div class="container">
+            <h2>Web Developer Projects</h2>
+            <div class="project-item">
+                <a href="https://github.com/21mh5a4907/Restaurant_table_booking.git">
+                    <h2 style="text-decoration: underline;">Restaurant table booking interface</h2>
+                </a>
+                <p>Project Overview
+                    The Restaurant Table Booking Interface is a web application designed to streamline the reservation process for diners and restaurant staff. This system allows customers to view available tables, select their preferred seating, and book a table for a specific date and time. For restaurant staff, it provides an efficient way to manage reservations, track table occupancy, and improve the overall dining experience.<br>
+                    
+                    <div><b>Key Features</b><br></div>
+
+                <div>
+                        <b>User Registration and Authentication</b><br>
+                    
+                    Customers can create accounts and log in to manage their reservations.
+                    Secure authentication to protect user data.<br>
+                </div>
+                <div>
+                    <b>Table Availability Display</b><br>
+                    
+                    
+                    Real-time display of available tables based on the selected date and time.
+                    Visual representation of the restaurant layout with available, occupied, and reserved tables.
+                </div>
+                <div>
+                    <b>Reservation System</b><br>
+                
+                    
+                    Easy-to-use interface for booking a table by selecting the date, time, and preferred table.
+                    Option to add special requests or dietary preferences.<br>
+                </div>
+                <div>
+                   <b>Reservation Management</b><br>
+                    
+                    Customers can view, modify, or cancel their reservations.
+                    Automated email and SMS notifications for reservation confirmation and reminders.<br>
+                </div>
+                <div>
+                    <b>Admin Dashboard</b><br>
+                    
+                    Restaurant staff can view and manage all reservations.
+                    Ability to block tables for maintenance or special events.
+                    Real-time updates on table occupancy and reservation status.
+                </div>
+                <div>
+                    <b>Customer Feedback</b><br>
+                    
+                    After dining, customers can leave feedback about their experience.
+                    Restaurant staff can review and respond to feedback to improve service quality.
+                </div>
+                <div>
+                    <b>Integration with Payment Systems</b><br>
+                    
+                    Option to integrate with online payment systems for deposit payments or pre-paid reservations.
+                    Secure payment processing to protect customer financial information.</p>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/21mh5a4907/ecommerce-website.git">
+                <h2>E-commerce Website interface</h2>
+                </a>
+                <p>The E-commerce Website Interface is a comprehensive platform designed to provide a seamless online shopping experience. This project includes user-friendly features for customers, efficient management tools for administrators, and secure payment processing capabilities.<br>
+
+
+                    <b>Key Features</b><br>
+                    <b>User Registration and Authentication:</b><br>
+                    
+                    Secure user registration and login system, including options for social media authentication.<br>
+                    <b>Product Catalog:</b><br>
+                    
+                    Detailed product listings with images, descriptions, pricing, and stock availability.<br>
+                    <b> and Filtering:</b><br>
+                    
+                    Advanced search functionality and filters to help users find products quickly.<br>
+                    <b>Shopping Cart:</b><br>
+                    
+                    Easy-to-use shopping cart system that allows users to add, remove, and update products.<br>
+                    <b>Order Management:</b><br>
+                    
+                    Comprehensive order management system for users to view order history and track shipments.<br>
+                    <b>Payment Integration:</b><br>
+                    
+                    Secure payment gateways integration for processing payments via credit/debit cards, PayPal, and other methods.<br>
+                    <b>Dashboard:</b><br>
+                    
+                    Powerful admin dashboard for managing products, orders, customers, and site settings.<br>
+                   <b>Customer Reviews and Ratings:</b><br>
+                    
+                    System for customers to leave reviews and ratings on products.<br>
+                    <b>Responsive Design:</b><br>
+                    
+                    Mobile-friendly design to ensure a seamless experience across all devices.</p><br>
+            </div>
+            <h2>Technologies Known</h2>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+    </section>
+
+    <section id="programmer" class="projects">
+        <div class="container">
+            <h2>Programmer Projects</h2>
+            <div class="project-item">
+                <div>
+                    <a href="https://github.com/21mh5a4907/Enhancing-WordPress-Blogs-with-Amazon-Polly.git">
+                    <h2 style="text-decoration: underline;">Python Language Translator</h2>
+                </a>
+                    <p>
+                        The Python Language Translator is a project aimed at creating a tool to translate text from one language to another using Python. This project leverages various translation APIs to provide accurate and efficient translations.
+                    </p>
+                
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Multi-language Support:</strong> Supports translation between numerous languages including English, Spanish, French, German, Chinese, and many more.</li>
+                        <li><strong>Text Input and Output:</strong> Allows users to input text in one language and get the translated text in another language.</li>
+                        <li><strong>API Integration:</strong> Utilizes popular translation APIs like Google Translate API, Microsoft Translator API, etc., for high-quality translations.</li>
+                        <li><strong>Command-line Interface:</strong> Simple and user-friendly CLI for translating text directly from the terminal.</li>
+                        <li><strong>Batch Translation:</strong> Supports batch translation of multiple lines of text or documents.</li>
+                        <li><strong>Error Handling:</strong> Robust error handling to manage API limits, network issues, and unsupported languages.</li>
+                    </ul>
+                
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li><strong>Programming Language:</strong> Python</li>
+                        <li><strong>APIs:</strong> Google Translate API, Microsoft Translator API, and other translation APIs</li>
+                    </ul>
+                
+                    <h3>Expected Outcomes</h3>
+                    <p>
+                        The Python Language Translator aims to provide a reliable and efficient tool for translating text between multiple languages. It will be useful for individuals, businesses, and developers who need to translate text as part of their daily operations.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="project-item">
+               <div>
+                <a href="https://github.com/21mh5a4907/Python-Weather-Forecasting-Application.git">
+    <h2 ;">Python Weather Forecasting Application</h2>
+    </a>
+    <p>
+        The Python Weather Forecasting Application is designed to provide real-time weather information and forecasts using Python. This project utilizes weather APIs to fetch current weather data and display it in a user-friendly manner.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+        <li><strong>Real-time Weather Data:</strong> Provides current weather conditions including temperature, humidity, wind speed, and more.</li>
+        <li><strong>Weather Forecast:</strong> Offers weather forecasts for the next few days, including daily highs and lows.</li>
+        <li><strong>Location Search:</strong> Allows users to search for weather information by city name or geographic coordinates.</li>
+        <li><strong>API Integration:</strong> Utilizes popular weather APIs like OpenWeatherMap API or Weatherstack API for accurate data.</li>
+        <li><strong>Command-line Interface:</strong> Simple CLI for users to input location and retrieve weather information.</li>
+        <li><strong>Graphical Interface:</strong> Optional GUI using libraries like Tkinter for a more interactive user experience.</li>
+        <li><strong>Error Handling:</strong> Manages errors related to network issues, invalid inputs, and API limits gracefully.</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <ul>
+        <li><strong>Programming Language:</strong> Python</li>
+        <li><strong>APIs:</strong> OpenWeatherMap API, Weatherstack API, or other weather APIs</li>
+    </ul>
+
+    <h3>Expected Outcomes</h3>
+    <p>
+        The Python Weather Forecasting Application aims to provide users with a reliable and easy-to-use tool for accessing real-time weather information and forecasts. It is designed to be beneficial for individuals planning their daily activities, as well as for developers who need weather data for their applications.
+    </p>
+</div>
+
+            </div>
+            <h2>Technologies Known</h2>
+            <p>Python, C++, Java</p>
+        </div>
+    </section>
+
+    <section id="cloud-enthusiast" class="projects">
+        <div class="container">
+            <h2>Cloud Enthusiast Projects</h2>
+            <div class="project-item">
+                <div>
+                    <h2>Google Cloud Infrastructure Management System</h2>
+                    <p>
+                        The Google Cloud Infrastructure Management System is designed to streamline the deployment, management, and monitoring of cloud resources using Google Cloud Platform (GCP). This project leverages various GCP services to provide a comprehensive solution for cloud infrastructure management.
+                    </p>
+                
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Resource Management:</strong> Provision, manage, and scale resources such as Compute Engine instances, Cloud Storage, and BigQuery.</li>
+                        <li><strong>Automated Deployment:</strong> Use Infrastructure as Code (IaC) tools like Terraform and Deployment Manager to automate the deployment of cloud resources.</li>
+                        <li><strong>Monitoring and Logging:</strong> Implement Cloud Monitoring and Cloud Logging to track resource usage, performance metrics, and logs.</li>
+                        <li><strong>Security and Compliance:</strong> Manage Identity and Access Management (IAM) policies, set up VPC networks, and configure firewall rules for enhanced security.</li>
+                        <li><strong>Cost Management:</strong> Monitor and optimize cloud costs using GCP’s cost management tools and set up budget alerts.</li>
+                        <li><strong>Backup and Recovery:</strong> Implement automated backup solutions and disaster recovery plans using Cloud Storage and Cloud SQL.</li>
+                        <li><strong>Data Analysis:</strong> Utilize BigQuery and Dataflow for data processing and analysis.</li>
+                    </ul>
+                
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li><strong>Cloud Platform:</strong> Google Cloud Platform (GCP)</li>
+                        <li><strong>Services:</strong> Compute Engine, Cloud Storage, BigQuery, Cloud Monitoring, Cloud Logging, IAM, VPC, Cloud SQL</li>
+                        <li><strong>Tools:</strong> Terraform, Google Cloud Deployment Manager</li>
+                    </ul>
+                
+                    <h3>Expected Outcomes</h3>
+                    <p>
+                        The Google Cloud Infrastructure Management System aims to provide a robust and efficient solution for managing cloud resources on GCP. It will help organizations optimize their cloud infrastructure, enhance security, and reduce operational costs. This system is ideal for businesses looking to leverage the power of Google Cloud for their infrastructure needs.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="project-item">
+                <div>
+                    <h2>AWS WordPress Blog Hosting Project</h2>
+                    <p>
+                        The AWS WordPress Blog Hosting Project is designed to deploy and manage a scalable, secure, and high-performance WordPress blog using Amazon Web Services (AWS). This project leverages various AWS services to provide a robust platform for hosting WordPress websites.
+                    </p>
+                
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Scalable Hosting:</strong> Use EC2 instances to host the WordPress site, with auto-scaling to handle traffic spikes.</li>
+                        <li><strong>Database Management:</strong> Utilize Amazon RDS for a managed MySQL database to store WordPress data.</li>
+                        <li><strong>Content Delivery Network (CDN):</strong> Implement Amazon CloudFront to deliver content with low latency and high transfer speeds.</li>
+                        <li><strong>Storage:</strong> Store WordPress media files in Amazon S3 for durable and scalable storage.</li>
+                        <li><strong>Security:</strong> Secure the site using AWS WAF, security groups, and IAM roles. Implement SSL certificates using AWS Certificate Manager.</li>
+                        <li><strong>Backup and Recovery:</strong> Automate backups of the WordPress site and database using AWS Backup and S3.</li>
+                        <li><strong>Monitoring and Logging:</strong> Use Amazon CloudWatch to monitor site performance and set up alarms for critical events.</li>
+                    </ul>
+                
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li><strong>Cloud Platform:</strong> Amazon Web Services (AWS)</li>
+                        <li><strong>Services:</strong> EC2, RDS (MySQL), S3, CloudFront, CloudWatch, AWS WAF, AWS Certificate Manager, IAM</li>
+                    </ul>
+                
+                    <h3>Expected Outcomes</h3>
+                    <p>
+                        The AWS WordPress Blog Hosting Project aims to provide a scalable, secure, and efficient hosting solution for WordPress blogs. By leveraging AWS services, the project ensures high availability, performance, and security, making it an ideal choice for bloggers and content creators looking to establish a robust online presence.
+                    </p>
+                </div>
+                
+            </div>
+            <h2>Technologies Known</h2>
+            <ul>
+                <li>
+                    <span>
+                        <span style="color: #4285F4;">G</span>
+                        <span style="color: #DB4437;">o</span>
+                        <span style="color: #F4B400;">o</span>
+                        <span style="color: #4285F4;">g</span>
+                        <span style="color: #0F9D58;">l</span>
+                        <span style="color: #DB4437;">e</span>
+                        <span style="color: #4285F4;">C</span>
+                        <span style="color: #DB4437;">l</span>
+                        <span style="color: #F4B400;">o</span>
+                        <span style="color: #4285F4;">u</span>
+                        <span style="color: #0F9D58;">d</span>
+                        <span style="color: #DB4437;">P</span>
+                        <span style="color: #4285F4;">l</span>
+                        <span style="color: #DB4437;">a</span>
+                        <span style="color: #F4B400;">t</span>
+                        <span style="color: #4285F4;">f</span>
+                        <span style="color: #0F9D58;">o</span>
+                        <span style="color: #DB4437;">r</span>
+                        <span style="color: #F4B400;">m</span>
+    
+    
+                    </span>
+                </li>
+                    <li style="color: #FF9900;">AWS</li>
+                    <li style="color: #007FFF;">AZURE</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <a href="https://www.credential.net/169d7190-5e3c-442b-915b-5d873d9edb3d?key=187e4e5fa03a043340d1c9267db16a5feaf8c6aa93c47ae3617b35144fe910f0#gs.5laxz1">
+                <li style="text-decoration: underline;">
+                <span>
+                    <span style="color: #4285F4;">G</span>
+                    <span style="color: #DB4437;">o</span>
+                    <span style="color: #F4B400;">o</span>
+                    <span style="color: #4285F4;">g</span>
+                    <span style="color: #0F9D58;">l</span>
+                    <span style="color: #DB4437;">e</span>
+                    <span style="color: #4285F4;">C</span>
+                    <span style="color: #DB4437;">l</span>
+                    <span style="color: #F4B400;">o</span>
+                    <span style="color: #4285F4;">u</span>
+                    <span style="color: #0F9D58;">d</span>
+                    <span style="color: #DB4437;">P</span>
+                    <span style="color: #4285F4;">l</span>
+                    <span style="color: #DB4437;">a</span>
+                    <span style="color: #F4B400;">t</span>
+                    <span style="color: #4285F4;">f</span>
+                    <span style="color: #0F9D58;">o</span>
+                    <span style="color: #DB4437;">r</span>
+                    <span style="color: #F4B400;">m</span>
+
+
+                </span>
+                </li>
+                </a>
+                <a href="https://drive.google.com/file/d/1R36wfhVHEU-eMasve0ibML7FI9Ib3qvG/view?usp=sharing">
+                <li>Python Certification</li>
+                </a>
+                <!-- Add more certifications as needed -->
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>CPP</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Cloud Computing</h3>
+                <ul>
+                    <li>
+                    <span>
+                        <span style="color: #4285F4;">G</span>
+                        <span style="color: #DB4437;">o</span>
+                        <span style="color: #F4B400;">o</span>
+                        <span style="color: #4285F4;">g</span>
+                        <span style="color: #0F9D58;">l</span>
+                        <span style="color: #DB4437;">e</span>
+                        <span style="color: #4285F4;">C</span>
+                        <span style="color: #DB4437;">l</span>
+                        <span style="color: #F4B400;">o</span>
+                        <span style="color: #4285F4;">u</span>
+                        <span style="color: #0F9D58;">d</span>
+                        <span style="color: #DB4437;">P</span>
+                        <span style="color: #4285F4;">l</span>
+                        <span style="color: #DB4437;">a</span>
+                        <span style="color: #F4B400;">t</span>
+                        <span style="color: #4285F4;">f</span>
+                        <span style="color: #0F9D58;">o</span>
+                        <span style="color: #DB4437;">r</span>
+                        <span style="color: #F4B400;">m</span>
+    
+    
+                    </span>
+                </li>
+                    <li style="color: #FF9900;">AWS</li>
+                    <li style="color: #007FFF;">AZURE</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Database</h3>
+                <ul>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>I am a Computer Science and Engineering student specializing in IoT, proficient in programming, web development, and cloud computing. I am certified in Google Cloud and Python.</p>
+        </div>
+    </section>
+    <section class="Mysocialprofiles">
+        <div class="container">
+            <h3>Mysocialprofiles</h3>
+            <ul>
+                <a href="https://www.linkedin.com/in/yadavlli-vinay-15964331b/">
+                <li style="color: #0077B5;">LinkedIn</li>
+                </a>
+                <a href="https://www.facebook.com/vinay.yadavilli">
+                <li style="color: #1877F2;">Facebook</li>
+                </a>
+                <a href="https://www.instagram.com/vinayyadavilli/">
+                <li style="color: #E1306C;">Instagram</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xrbzpave" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="resume">
+        <div class="container">
+            <a href="https://drive.google.com/file/d/18g40seXTvy7VCUeqob1xksnnRh1KjIi7/view?usp=sharing">Download Resume</a>
+        </div>
+    </section>
+</body>
+</html>
